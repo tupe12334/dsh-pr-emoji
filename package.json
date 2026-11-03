@@ -1,0 +1,18 @@
+{
+  "name": "dsh-pr-emoji",
+  "description": "dsh web: prefix every GitHub PR link in chat with its live state emoji",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "client": { "platform": "web", "inject": ["@deepseek-ai/dsh-client-ui-chat"] }
+  },
+  "scripts": { "test": "node --test" },
+  "license": "MIT"
+}
