@@ -1,0 +1,4 @@
+# dsh-pr-emoji bundle: load the plugin when the profile lists this package as a bundle.
+- insert:
+    - id: dsh-pr-emoji
+      name: 'dsh-pr-emoji'

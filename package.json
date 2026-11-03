@@ -1,8 +1,7 @@
 {
   "name": "dsh-pr-emoji",
-  "description": "dsh web: prefix every GitHub PR link in chat with its live state emoji",
+  "description": "DeepSeek Harness (dsh) web plugin: prefix every GitHub pull request link in chat with its live state emoji",
   "version": "0.1.0",
-  "private": true,
   "type": "module",
   "main": "index.js",
   "exports": {
@@ -10,9 +9,31 @@
     "./client": "./client.js",
     "./package.json": "./package.json"
   },
+  "files": [
+    "index.js",
+    "client.js",
+    "marker.js",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
   "dsh": {
+    "bundle": { "patch": "./cordis.patch.yml" },
     "client": { "platform": "web", "inject": ["@deepseek-ai/dsh-client-ui-chat"] }
   },
-  "scripts": { "test": "node --test" },
-  "license": "MIT"
+  "scripts": {
+    "test": "node --test",
+    "prepublishOnly": "node --test"
+  },
+  "keywords": ["dsh", "deepseek-harness", "dsh-plugin", "github", "pull-request", "emoji"],
+  "author": "Ofek Gabay",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tupe12334/dsh-pr-emoji.git"
+  },
+  "homepage": "https://github.com/tupe12334/dsh-pr-emoji#readme",
+  "bugs": { "url": "https://github.com/tupe12334/dsh-pr-emoji/issues" },
+  "engines": { "node": ">=20" },
+  "publishConfig": { "access": "public" }
 }
