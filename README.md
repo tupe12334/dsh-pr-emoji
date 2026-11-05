@@ -52,6 +52,10 @@ dsh loads the plugin live. You do not need to restart dsh.
 npm test
 ```
 
+## Related projects
+
+- [moadim](https://moadim.io/) — loop engineering: build, schedule and run agent loops.
+
 ## License
 
 MIT
