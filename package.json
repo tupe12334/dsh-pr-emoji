@@ -22,6 +22,7 @@
     "client": { "platform": "web", "inject": ["@deepseek-ai/dsh-client-ui-chat"] }
   },
   "scripts": {
+    "lint": "eslint .",
     "test": "node --test",
     "prepublishOnly": "node --test"
   },
@@ -35,5 +36,9 @@
   "homepage": "https://github.com/tupe12334/dsh-pr-emoji#readme",
   "bugs": { "url": "https://github.com/tupe12334/dsh-pr-emoji/issues" },
   "engines": { "node": ">=20" },
-  "publishConfig": { "access": "public" }
+  "publishConfig": { "access": "public" },
+  "devDependencies": {
+    "eslint": "^9.39.5",
+    "eslint-config-agent": "^3.1.0"
+  }
 }
