@@ -30,9 +30,14 @@ The rules live in [`marker.js`](marker.js).
 
 ## Install
 
+The package is not on npm yet. Install it from a local clone:
+
 ```sh
-dsh plugin --profile <profile> add dsh-pr-emoji
+git clone https://github.com/tupe12334/dsh-pr-emoji.git
+dsh plugin --profile <profile> add link:$PWD/dsh-pr-emoji
 ```
+
+After a release is published (tag `v*`, see `.github/workflows/release.yml`), `dsh plugin --profile <profile> add dsh-pr-emoji` works too.
 
 dsh loads the plugin live. You do not need to restart dsh.
 
